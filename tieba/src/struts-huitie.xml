@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<package name="huitie" namespace="/huitie" extends="tiebainterceptor">
+
+		<action name="findCount" class="sss.yyao.tieba.action.huitie.FindCountAction">
+			<result name="success">
+				/WEB-INF/main/huitiecount.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="findHuiTie" class="sss.yyao.tieba.action.huitie.FindHuiTieAction">
+			<result name="success">
+				/WEB-INF/main/tiezi.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="findFinf" class="sss.yyao.tieba.action.huitie.FindFinfAction">
+			<result name="success">
+				/WEB-INF/main/finf.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="huiTie" class="sss.yyao.tieba.action.huitie.HuiTieAction">
+			<result name="success" type="redirectAction">
+				../huitie/findHuiTie
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+			<interceptor-ref name="loginStack" />
+		</action>
+		
+		<action name="findFinfCount" class="sss.yyao.tieba.action.huitie.FindFinfCountAction">
+			<result name="success">
+				/WEB-INF/main/finfcount.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+
+	</package>
+
+</struts>

@@ -1,0 +1,32 @@
+span{
+	color: #f44;
+}
+#result_body,#result_count{
+	width: 750px;
+	margin: 50px auto;
+}
+
+#result_each{
+	-moz-box-shadow:10px 10px 10px #777;
+	box-shadow:5px 5px 5px #777;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	/* background: #fff; */
+}
+
+/* #result_each:HOVER{
+	box-shadow:0 0 0 #777;
+	background: #fff;
+} */
+
+#result_each h2, #result_each p{
+	margin-left: 40px;
+	margin-right: 40px;
+	word-wrap: break-word;
+}
+
+#tieba_msg{
+	text-align: right;
+	font-size: 0.6em;
+	color: #777;
+}

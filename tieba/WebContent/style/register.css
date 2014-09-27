@@ -1,0 +1,23 @@
+#body{
+	width: 230px;
+	height: 260px;
+	margin: 50px auto;
+	padding: 50px;
+	-moz-box-shadow:0 0 20px #777;
+	box-shadow:0 0 10px #777;
+}
+table {
+}
+
+.sub {
+	width: 230px;
+	height: 30px;
+	border: 0;
+	background: #22f;
+	color: #fff;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+.sub:hover{
+	background: #22a;
+}

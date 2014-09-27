@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+	<!-- 添加公共模块 -->
+	<include file="struts-common.xml" />
+
+	<!-- 添加账号模块 -->
+	<include file="struts-account.xml" />
+
+	<!-- 添加贴吧模块 -->
+	<include file="struts-tieba.xml" />
+
+	<!-- 添加帖子模块 -->
+	<include file="struts-tiezi.xml" />
+
+	<!-- 添加回帖模块 -->
+	<include file="struts-huitie.xml" />
+	
+	<!-- 添加关注好友模块 -->
+	<include file="struts-attentionfriends.xml" />
+	
+	<!-- 添加关注贴吧模块 -->
+	<include file="struts-attentiontiebas.xml" />
+
+</struts>

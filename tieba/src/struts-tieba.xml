@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<package name="tieba" namespace="/tieba" extends="tiebainterceptor">
+	
+		<action name="searchTieBa" class="sss.yyao.tieba.action.tieba.SearchTieBaAction">
+			<result name="success">
+				/WEB-INF/main/searchresult.jsp
+			</result>
+			<result name="none">
+				/WEB-INF/main/tocreatetieba.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="toCreateTieBa">
+			<result>
+				/WEB-INF/main/createtieba.jsp
+			</result>
+		</action>
+		
+		<action name="createTieBa" class="sss.yyao.tieba.action.tieba.CreateTieBaAction">
+			<result name="success" type="redirectAction">
+				../account/toIndex
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+			<interceptor-ref name="loginStack" />
+		</action>
+	
+	</package>
+
+</struts>

@@ -1,0 +1,32 @@
+#body{
+	
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+	padding: 50px;
+	-moz-box-shadow:0 0 20px #777;
+	box-shadow:0 0 10px #777;
+}
+table {
+}
+
+.in {
+	width: 300px;
+	height: 35px;
+}
+.yan{
+	width: 100px;
+	height: 30px;
+}
+.sub{
+	width: 300px;
+	height: 35px;
+	font-size: 1.4em;
+	background: #22f;
+	color: #fff;
+	border: 0;
+}
+
+.sub:hover{
+	background: #22a;
+}

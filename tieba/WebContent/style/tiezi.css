@@ -1,0 +1,123 @@
+#tieba{
+	width: 850px;
+	margin: 50px auto;
+}
+
+#tieba h1, #tieba p{
+	margin-left: 40px;
+	margin-right: 40px;
+	word-wrap: break-word;
+}
+.attentionButton{
+	width: 70px;
+	height: 30px;
+}
+#tieba_msg,#finf_msg{
+	text-align: right;
+	font-size: 0.6em;
+	color: #777;
+}
+
+#huitie_list{
+	-moz-box-shadow:0 0 20px #777;
+	box-shadow:0 0 20px #777;
+	width: 750px;
+	margin: 50px auto;
+	border-top: 1px dotted #ccc;
+	background: #fff;
+}
+
+#huitie_list #title{
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 50px;
+	background: #22f;
+	color: #fff;
+	font-size: 1.4em;
+	border-bottom: 1px dotted #ccc;
+}
+
+#huitie_list #theme{
+	padding-left: 50px;
+	padding-right: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+#tiezi_msg,#huitie_msg{
+	text-align: right;
+	font-size: 0.6em;
+	color: #777;
+}
+
+#each_huitie{
+	border-bottom: 1px dotted #ccc;
+}
+
+#each_huitie #name{
+	width: 120px;
+	float: left;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#each_huitie #body{
+	width: 581px;
+	float: left;
+	padding: 24px;
+	border-left: 1px dotted #ccc;
+}
+#finf{
+	width: 500px;
+	margin: 10px auto;
+	background: #eef;
+	padding: 10px;
+	display: none;
+	border-top: 1px dotted #ccc;
+}
+#finf div{
+	border-bottom: 1px dotted #ccc;
+}
+#finfform textarea{
+	width: 500px;
+	height: 80px;
+	resize: none;
+	margin: 10px auto;
+}
+#huitie{
+	width: 750px;
+	margin: 50px auto;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+#huitie p{
+	width: 650px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+
+#huitie #content{
+	text-align: center;
+}
+
+#huitie #content textarea {
+	width: 650px;
+	height: 150px;
+	resize: none;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+#huitie #submit {
+	width: 650px;
+	margin: 30px auto;
+}
+
+#huitie #submit input {
+	width: 80px;
+	height: 40px;
+	border: 0;
+	font-size: 1.5em;
+	background: #66f;
+	color: #fff;
+}

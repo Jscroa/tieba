@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<package name="attentionfriends" namespace="/attentionFriends" extends="tiebainterceptor">
+	
+		<action name="checkAttention" class="sss.yyao.tieba.action.attentionFriends.CheckAttentionAction">
+			<result name="success">
+				/WEB-INF/main/attentionButton.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="addAttention" class="sss.yyao.tieba.action.attentionFriends.AddAttentionAction">
+			<result name="success" type="redirectAction">
+				../account/toIndex
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="findAttention" class="sss.yyao.tieba.action.attentionFriends.FindAttentionAction">
+			<result name="success">
+				/WEB-INF/main/attList.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="findFans" class="sss.yyao.tieba.action.attentionFriends.FindFansAction">
+			<result name="success">
+				/WEB-INF/main/attAccList.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+	</package>
+
+</struts>

@@ -1,0 +1,26 @@
+#body{
+	width: 400px;
+	padding: 30px;
+	margin: 60px auto;
+	-moz-box-shadow:0 0 20px #777;
+	box-shadow:0 0 10px #777;
+}
+#textarea {
+	width: 300px;
+	height: 150px;
+	resize: none;
+}
+
+.sub {
+	width: 400px;
+	height: 30px;
+	border: 0;
+	background: #22f;
+	color: #fff;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+
+.sub:hover{
+	background: #22a;
+}

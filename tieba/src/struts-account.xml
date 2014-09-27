@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<package name="account" namespace="/account" extends="struts-default">
+	
+		<action name="toIndex" class="sss.yyao.tieba.action.account.ToIndexAction">
+			<result name="success">
+				/WEB-INF/main/index.jsp
+			</result>
+		</action>
+		
+		<action name="toLogin">
+			<result>
+				/WEB-INF/main/login.jsp
+			</result>
+		</action>
+		
+		<action name="createImage" class="sss.yyao.tieba.action.account.CreateImageAction">
+			<result name="success" type="stream">
+				<param name="inputName">
+					imageStream
+				</param>
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="login" class="sss.yyao.tieba.action.account.LoginAction">
+			<result name="success" type="redirectAction">
+				toIndex
+			</result>
+			<result name="fail" type="redirectAction">
+				toLogin
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="logout" class="sss.yyao.tieba.action.account.LogoutAction">
+			<result name="success" type="redirectAction">
+				toIndex
+			</result>
+		</action>
+		
+		<action name="toRegister">
+			<result>
+				/WEB-INF/main/register.jsp
+			</result>
+		</action>
+		
+		<action name="register" class="sss.yyao.tieba.action.account.RegisterAction">
+			<result name="success" type="redirectAction">
+				toIndex
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+		<action name="findName" class="sss.yyao.tieba.action.account.FindNameByIdAction">
+			<result name="success">
+				/WEB-INF/main/username.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/error.jsp
+			</result>
+		</action>
+		
+	</package>
+
+</struts>

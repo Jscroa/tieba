@@ -1,0 +1,97 @@
+#tieba{
+	width: 850px;
+	margin: 50px auto;
+}
+
+#tieba h1, #tieba p{
+	margin-left: 40px;
+	margin-right: 40px;
+	word-wrap: break-word;
+}
+.attentionButton{
+	width: 70px;
+	height: 30px;
+}
+#tieba_msg,#tiezi_msg{
+	text-align: right;
+	font-size: 0.6em;
+	color: #777;
+}
+
+#tiezi_list{
+	-moz-box-shadow:0 0 20px #777;
+	box-shadow:0 0 20px #777;
+	width: 750px;
+	margin: 50px auto;
+	border-top: 1px dotted #ccc;
+	background: #fff;
+}
+
+#each_tiezi{
+	border-bottom: 1px dotted #aaa;
+}
+
+#each_tiezi #count{
+	width: 80px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+}
+
+#each_tiezi #body{
+	width: 610px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+#fatie{
+	width: 750px;
+	margin: 50px auto;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+#fatie p{
+	width: 650px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+#fatie #title, #fatie #theme {
+	text-align: center;
+}
+
+#fatie #title input {
+	width: 650px;
+	height: 40px;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#fatie #theme {
+	margin-top: 50px;
+}
+
+#fatie #theme textarea {
+	width: 650px;
+	height: 150px;
+	resize: none;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+#fatie #submit {
+	width: 650px;
+	margin: 30px auto;
+}
+
+#fatie #submit input {
+	width: 80px;
+	height: 40px;
+	border: 0;
+	font-size: 1.5em;
+	background: #66f;
+	color: #fff;
+}
