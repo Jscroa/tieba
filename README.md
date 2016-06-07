@@ -1,10 +1,10 @@
 贴吧
 -----
-*jre: 1.7.0_65
-*IDE: eclipse
-*Server: tomcat8.0
-*DB: Oracle
-*Index url: http://localhost:8080/tieba
+* jre: 1.7.0_65
+* IDE: eclipse
+* Server: tomcat8.0
+* DB: Oracle
+* Index url: http://localhost:8080/tieba
 ```sql
 create sequence bysj_account_seq start with 1000;
 create sequence bysj_tieba_seq start with 1000;
